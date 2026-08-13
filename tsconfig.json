@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ES2015",
     "lib": ["dom", "ES2015"],
-    "module": "NodeNext",
+    "module": "Node16",
     "outDir": "./build",
     "rootDir": ".",
     "strict": true,

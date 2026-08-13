@@ -7,7 +7,7 @@ const log: Logger = winstonLogger(`${config.ELASTIC_SEARCH_URL}`, 'notificationQ
 
 export async function createRabbitMQConnection(): Promise<Channel> {
   try {
-    log.info('Creating connection to RabbitMQ...');
+    log.info('Notification service: Creating connection to RabbitMQ...');
 
     const connection: ChannelModel = await amqp.connect(`${config.RABBITMQ_ENDPOINT}`);
     const channel: Channel = await connection.createChannel();
